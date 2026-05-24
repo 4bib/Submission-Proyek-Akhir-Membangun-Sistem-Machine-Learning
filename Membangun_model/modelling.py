@@ -9,7 +9,7 @@ import os
 
 def train_model():
     # Load processed data
-    data_path = './namadataset_preprocessing'
+    data_path = './Membangun_model/namadataset_preprocessing'
     X_train = np.load(os.path.join(data_path, 'X_train_scaled.npy'))
     X_test = np.load(os.path.join(data_path, 'X_test_scaled.npy'))
     y_train = pd.read_csv(os.path.join(data_path, 'y_train.csv'))
