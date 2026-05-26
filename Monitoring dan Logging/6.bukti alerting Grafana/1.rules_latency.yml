@@ -1,0 +1,10 @@
+groups:
+  - name: mlflow_alerts
+    rules:
+      - alert: HighInferenceLatency
+        expr: mlflow_inference_latency_seconds_sum / mlflow_inference_latency_seconds_count > 1.0
+        for: 2m
+        labels:
+          severity: warning
+        annotations:
+          description: "Average inference latency is above 1 second."

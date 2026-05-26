@@ -1,0 +1,3 @@
+Placeholder bukti notifikasi alert Grafana untuk latency tinggi.
+
+Pastikan tangkapan layar menunjukkan alert Grafana yang aktif ketika metrik latency terlampaui.

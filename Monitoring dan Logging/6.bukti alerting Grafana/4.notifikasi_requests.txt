@@ -1,0 +1,3 @@
+Placeholder bukti notifikasi alert Grafana untuk request rate tinggi.
+
+Pastikan tangkapan layar menunjukkan alert Grafana yang muncul ketika metrik request rate melebihi threshold.

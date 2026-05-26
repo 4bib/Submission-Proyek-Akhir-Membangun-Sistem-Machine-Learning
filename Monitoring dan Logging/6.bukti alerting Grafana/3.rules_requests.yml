@@ -1,0 +1,10 @@
+groups:
+  - name: mlflow_alerts
+    rules:
+      - alert: HighRequestRate
+        expr: rate(mlflow_inference_requests_total[5m]) > 20
+        for: 2m
+        labels:
+          severity: warning
+        annotations:
+          description: "Inference request rate is higher than 20 requests per minute."
